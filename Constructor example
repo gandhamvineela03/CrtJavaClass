@@ -1,0 +1,50 @@
+package arrayexample;
+class Car {
+    private String carName;
+    private float mileage;
+    private String colour;
+
+    // Constructor
+    public Car(String carName, float mileage, String colour) {
+        this.carName = carName;
+        this.mileage = mileage;
+        this.colour = colour;
+    }
+
+    // Setter methods(but no need when constructor is used)
+    
+    public void setCarName(String carName) {
+        this.carName = carName;
+    }
+
+    public void setMileage(float mileage) {
+        this.mileage = mileage;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    // Getter methods
+    public String getCarName() {
+        return carName;
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+}
+
+class Constructor {
+    public static void main(String[] args) {
+        
+        Car c = new Car("BMW", 75f, "Red");
+        System.out.println("Car Name: " + c.getCarName());
+        System.out.println("Mileage: " + c.getMileage());
+        System.out.println("Colour: " + c.getColour());
+    }
+}
