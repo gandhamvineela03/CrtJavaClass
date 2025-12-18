@@ -1,0 +1,23 @@
+package arrayexample;
+class Car1 {
+    int x;
+    String name;
+
+    // Default constructor
+    Car1() {
+        x = 100;  
+    }
+    // One-parameter constructor
+    Car1(String name) {
+        this();        // calls default constructor
+        this.name = name;
+    }
+}
+
+public class LocalChaining {
+    public static void main(String[] args) {
+        Car1 c = new Car1("Swift");
+        System.out.println("x value: " + c.x);
+        System.out.println("name: " + c.name);
+    }
+}
